@@ -29,13 +29,14 @@ The volume (-v or --volume=) must mount the directory within which the changelog
 
 The environment variables required are:
 
-POSTGRES_USER - the user to the target database  
-POSTGRES_PASSWORD - password to the target database  
-POSTGRES_DB - the target database name  
-POSTGRES_HOST - the IP address of the target database  
-POSTGRES_PORT - the port postgres is running on
-CHANGELOG_FILE - the name of the changelog file
+`POSTGRES_USER` - the user to the target database
+`POSTGRES_PASSWORD` - password to the target database
+`POSTGRES_DB` - the target database name
+`POSTGRES_HOST` - the IP address of the target database
+`POSTGRES_PORT` - the port postgres is running on
+`CHANGELOG_FILE` - the name of the changelog file (absolute path, unless using `CHANGELOG_PWD`)
 
 and optionally
 
-MAX_TRIES - default which defaults to 4 if not set
+`CHANGELOG_PWD` - sets the PWD for liquibase to run from
+`MAX_TRIES` - default which defaults to 4 if not set
